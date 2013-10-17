@@ -1,0 +1,20 @@
+Drill report for C:\Users\Anool\Documents\Arduino\BADGEr_v5\BADGER_v5.kicad_pcb
+Created on 17-Oct-13 4:43:48 PM
+Drill report for plated through holes :
+T1  0.64mm  0.025"  (111 holes)
+T2  0.89mm  0.035"  (4 holes)
+T3  0.90mm  0.035"  (2 holes)
+T4  1.02mm  0.040"  (49 holes)  (with 1 slot)
+T5  1.17mm  0.046"  (2 holes)  (with 2 slots)
+T6  1.27mm  0.050"  (2 holes)
+T7  2.54mm  0.100"  (2 holes)  (with 2 slots)
+T8  3.17mm  0.125"  (5 holes)
+
+Total plated holes count 177
+
+
+Drill report for unplated through holes :
+
+Total unplated holes count 0
+
+
