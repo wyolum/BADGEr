@@ -1,13 +1,11 @@
-update=17-Oct-13 4:44:50 PM
+update=Friday 18 October 2013 10:21:22 PM IST
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[general]
-version=1
 [pcbnew]
 version=1
 LastNetListRead=BADGER_v5.net
@@ -42,3 +40,5 @@ LabSize=60
 [eeschema/libraries]
 LibName1=power
 LibName2=BADGER_v5_lib/BADGER_v5_sym
+[general]
+version=1
