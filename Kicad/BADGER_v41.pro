@@ -1,6 +1,6 @@
-update=Sunday 20 October 2013 12:07:39 PM IST
+update=Wednesday 19 February 2014 04:43:00 PM IST
 version=1
-last_client=pcbnew
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
@@ -8,17 +8,6 @@ NetIExt=net
 EquName1=devcms
 [general]
 version=1
-[eeschema]
-version=1
-LibDir=
-NetFmtName=PcbnewAdvanced
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
-[eeschema/libraries]
-LibName1=power
-LibName2=BADGER_v41_lib/BADGER_sym
 [pcbnew]
 version=1
 LastNetListRead=BADGER_v5.net
@@ -43,3 +32,17 @@ LibDir=
 LibName1=BADGER_v41_lib/BADGEr_fp
 LibName2=BADGER_v5_lib/wyo_logo
 LibName3=BADGER_v5_lib/OSHW
+[eeschema]
+version=1
+PageLayoutDescrFile=
+SubpartIdSeparator=0
+SubpartFirstId=65
+LibDir=
+NetFmtName=PcbnewAdvanced
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
+[eeschema/libraries]
+LibName1=BADGER_v41_lib/BADGER_sym
+LibName2=BADGER_v41_lib/power
