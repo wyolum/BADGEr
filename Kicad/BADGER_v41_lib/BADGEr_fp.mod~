@@ -297,7 +297,7 @@ Ne 2 "/Interface/-Vlv"
 Po -6.35 1.27
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_6x2-90.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_6x2-90.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -467,13 +467,13 @@ Ne 15 "/TEMPERATURE"
 Po -44.704 2.54
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_10-90.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_10-90.wrl"
 Sc 1 1 1
 Of -1.31 -0.1 0
 Ro 0 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_8-90.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_8-90.wrl"
 Sc 1 1 1
 Of -0.35 -0.1 0
 Ro 0 0 0
@@ -1037,25 +1037,25 @@ Ne 18 "/RPi/SCL"
 Po 18.796 -50.8
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_08.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_08.wrl"
 Sc 1 1 1
 Of 1.45 0.1 0
 Ro 0 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_06.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_06.wrl"
 Sc 1 1 1
 Of 2.25 0.1 0
 Ro 0 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_08.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_08.wrl"
 Sc 1 1 1
 Of 2.15 2 0
 Ro 0 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_10.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_10.wrl"
 Sc 1 1 1
 Of 1.2 2 0
 Ro 0 0 0
@@ -1127,7 +1127,7 @@ Ne 0 ""
 Po 3.34772 -1.69926
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/s2b-ph-sm4-tb.wrl"
+Na "BADGER_v41_lib/BADGER_3D/s2b-ph-sm4-tb.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -1163,7 +1163,7 @@ Ne 0 ""
 Po 0 -1.27
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/cp_5x11mm.wrl"
+Na "BADGER_v41_lib/BADGER_3D/cp_5x11mm.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -1206,7 +1206,7 @@ Ne 1 "/aLaMode_v1_rtc/BAT"
 Po 12.954 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/bateria_suporte.wrl"
+Na "BADGER_v41_lib/BADGER_3D/bateria_suporte.wrl"
 Sc 1.8 1.8 1
 Of 0 0 0
 Ro 0 0 0
@@ -1222,7 +1222,7 @@ T0 -1.651 -10.795 0.762 0.762 0 0.1524 N V 21 N "BT2"
 T1 3.429 -10.795 0.762 0.762 0 0.1524 N V 21 N "BATT_COIN"
 DC 0 0 -10.16 0 0.1524 21
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/CR2032_Batt.wrl"
+Na "BADGER_v41_lib/BADGER_3D/CR2032_Batt.wrl"
 Sc 1.225 1.225 1
 Of 0 0 0.05
 Ro 180 0 0
@@ -1286,7 +1286,7 @@ Po 0 0
 .ThermalGap 1.016
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/batt-02.wrl"
+Na "BADGER_v41_lib/BADGER_3D/batt-02.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -1351,7 +1351,7 @@ Po 0 0
 .ThermalGap 1.016
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/batt-02.wrl"
+Na "BADGER_v41_lib/BADGER_3D/batt-02.wrl"
 Sc 1.225 1.1 1.225
 Of 0 0 0.005
 Ro 0 0 0
@@ -1395,7 +1395,7 @@ Ne 2 "GND"
 Po -0.0635 -2.286
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/c_elec_5x5_3.wrl"
+Na "BADGER_v41_lib/BADGER_3D/c_elec_5x5_3.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 90
@@ -1410,7 +1410,7 @@ Op 0 0 0
 T0 0 -0.508 1.016 1.016 0 0.1524 N I 21 N "DIP"
 T1 0 0.762 1.016 1.016 0 0.1524 N I 21 N "VAL**"
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/soquete_28_300.wrl"
+Na "BADGER_v41_lib/BADGER_3D/soquete_28_300.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -1638,7 +1638,7 @@ Ne 19 "/RPi/SCL"
 Po -16.51 -3.81
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/dil_28-300.wrl"
+Na "BADGER_v41_lib/BADGER_3D/dil_28-300.wrl"
 Sc 1 1 1
 Of 0 0 0.1
 Ro 0 0 0
@@ -1783,7 +1783,7 @@ Ne 5 "/clock2-Aux/SCL"
 Po -4.445 -4.65074
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/cms_so16.wrl"
+Na "BADGER_v41_lib/BADGER_3D/cms_so16.wrl"
 Sc 0.5 0.6 0.5
 Of 0 0 0
 Ro 0 0 0
@@ -1830,7 +1830,7 @@ Ne 2 "/AREF"
 Po 1.27 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_2.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_2.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -1928,7 +1928,7 @@ Ne 1 "GND"
 Po 6.35 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_06.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_06.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -1989,7 +1989,7 @@ Ne 3 "/aLaMode_pwr/5V0"
 Po 2.54 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_3.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_3.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -2111,7 +2111,7 @@ Ne 4 "/~RTS"
 Po 6.35 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pins_array_6x1.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pins_array_6x1.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -2314,25 +2314,25 @@ Ne 0 ""
 Po 15.24 -1.27
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_13.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_13.wrl"
 Sc 1 1 1
 Of 0 0.05 -0.55
 Ro 180 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_13.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_13.wrl"
 Sc 1 1 1
 Of 0 -0.05 -0.55
 Ro 180 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_13_long.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_13_long.wrl"
 Sc 1 1 1
 Of 0 0.05 -0.025
 Ro 180 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_13_long.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_13_long.wrl"
 Sc 1 1 1
 Of 0 -0.05 -0.025
 Ro 180 0 0
@@ -2457,7 +2457,7 @@ Ne 2 "/1pps"
 Po 6.35 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pins_array_6x1.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pins_array_6x1.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -2544,13 +2544,13 @@ Po 8.89 0
 .LocalClearance 0.1778
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_08.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_08.wrl"
 Sc 1 1 1.5
 Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_8.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_8.wrl"
 Sc 1 1 1
 Of 0 0 -0.05
 Ro 0 180 0
@@ -2662,7 +2662,7 @@ Ne 6 "GND"
 Po 2.54 -1.27
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_3x2.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_3x2.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -2752,7 +2752,7 @@ Ne 4 "/SPI_MISO_3V3"
 Po 2.54 -1.27
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_3x2-90.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_3x2-90.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 180
@@ -2826,7 +2826,7 @@ Ne 0 ""
 Po 7.62 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_07.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_07.wrl"
 Sc 1 1 1.5
 Of 0 0 0
 Ro 0 0 0
@@ -2957,7 +2957,7 @@ Ne 6 "/aLaMode_v1_rtc/5V0"
 Po 8.89 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_8.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_8.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -3042,7 +3042,7 @@ Ne 2 "/RPi/U6_OE"
 Po 0 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_3.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_3.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -3109,7 +3109,7 @@ Ne 0 ""
 Po -1.27 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_3.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_3.wrl"
 Sc 0.5 0.5 0.5
 Of 0 0 0
 Ro 0 0 0
@@ -3175,7 +3175,7 @@ Po 3 4.9
 .LocalClearance 0.0508
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/POWER_21.wrl"
+Na "BADGER_v41_lib/BADGER_3D/POWER_21.wrl"
 Sc 0.8 0.8 0.8
 Of 0 0 0
 Ro 0 0 0
@@ -70103,7 +70103,7 @@ DS 0 0 -0.508 0 0.127 21
 DS 0 0 0 0.508 0.127 21
 DS 0 0 0 -0.508 0.127 21
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/repaper_PCB2.wrl"
+Na "BADGER_v41_lib/BADGER_3D/repaper_PCB2.wrl"
 Sc 1 1 0.9
 Of 0 0 -0.01
 Ro 0 0 0
@@ -70497,13 +70497,13 @@ Ne 0 ""
 Po 10.922 -5.3975
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/sd_socket.wrl"
+Na "BADGER_v41_lib/BADGER_3D/sd_socket.wrl"
 Sc 0.5 0.5 0.5
 Of 0.3 0.08 0
 Ro 0 0 -90
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/sd_socket.wrl"
+Na "BADGER_v41_lib/BADGER_3D/sd_socket.wrl"
 Sc 0.5 0.5 0.5
 Of 0.3 0.08 0
 Ro 0 0 -90
@@ -70640,13 +70640,13 @@ Ne 0 ""
 Po 10.5 -5.2
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/sd_socket.wrl"
+Na "BADGER_v41_lib/BADGER_3D/sd_socket.wrl"
 Sc 0.5 0.5 0.5
 Of 0.3 0.08 0
 Ro 0 0 -90
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/sd_socket.wrl"
+Na "BADGER_v41_lib/BADGER_3D/sd_socket.wrl"
 Sc 0.5 0.5 0.5
 Of 0.3 0.08 0
 Ro 0 0 -90
@@ -70719,7 +70719,7 @@ Ne 0 ""
 Po 7.62 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/conF_07.wrl"
+Na "BADGER_v41_lib/BADGER_3D/conF_07.wrl"
 Sc 1 1 1.5
 Of 0 0 0
 Ro 0 0 0
@@ -70859,7 +70859,7 @@ Ne 0 ""
 Po -3.81 -2.667
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/cms_so14.wrl"
+Na "BADGER_v41_lib/BADGER_3D/cms_so14.wrl"
 Sc 0.5 0.35 0.5
 Of 0 0 0
 Ro 0 0 0
@@ -71028,7 +71028,7 @@ Ne 1 "/3V3"
 Po 5.715 4.826
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/cms_so20.wrl"
+Na "BADGER_v41_lib/BADGER_3D/cms_so20.wrl"
 Sc 0.5 0.6 0.5
 Of 0 0 0
 Ro 0 0 0
@@ -71114,7 +71114,7 @@ Ne 6 "GND"
 Po 1.905 2.413
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/cms_so8.wrl"
+Na "BADGER_v41_lib/BADGER_3D/cms_so8.wrl"
 Sc 0.5 0.35 0.5
 Of 0 0 0
 Ro 0 0 0
@@ -71168,7 +71168,7 @@ Ne 0 ""
 Po -2.286 3.175
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/SOT223.wrl"
+Na "BADGER_v41_lib/BADGER_3D/SOT223.wrl"
 Sc 0.4 0.4 0.4
 Of 0 0 0
 Ro 0 0 0
@@ -71210,7 +71210,7 @@ Ne 3 "N-0000016"
 Po -0.9525 1.09982
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/SOT23_3.wrl"
+Na "BADGER_v41_lib/BADGER_3D/SOT23_3.wrl"
 Sc 0.4 0.4 0.4
 Of 0 0 0
 Ro 0 0 180
@@ -71258,7 +71258,7 @@ Ne 0 ""
 Po 0.9525 1.2065
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/SOT23_3.wrl"
+Na "BADGER_v41_lib/BADGER_3D/SOT23_3.wrl"
 Sc 0.4 0.4 0.4
 Of 0 0 0
 Ro 0 0 180
@@ -71306,7 +71306,7 @@ Ne 2 "/TEMPERATURE"
 Po 0.9525 1.2065
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/SOT23_3.wrl"
+Na "BADGER_v41_lib/BADGER_3D/SOT23_3.wrl"
 Sc 0.4 0.4 0.4
 Of 0 0 0
 Ro 0 0 180
@@ -71376,7 +71376,7 @@ Po -0.9525 -1.3335
 .LocalClearance 0.127
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/SOT23_5.wrl"
+Na "BADGER_v41_lib/BADGER_3D/SOT23_5.wrl"
 Sc 0.1 0.1 0.1
 Of 0 0 0
 Ro 0 0 0
@@ -71420,7 +71420,7 @@ Ne 2 "/VGH"
 Po 0 0.94996
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/SOT323.wrl"
+Na "BADGER_v41_lib/BADGER_3D/SOT323.wrl"
 Sc 0.4 0.4 0.4
 Of 0 0 0.001
 Ro 0 0 0
@@ -71474,7 +71474,7 @@ Ne 1 "/UP"
 Po -2.25 3.25
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pcb_push.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pcb_push.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -71528,7 +71528,7 @@ Ne 2 "/MODE"
 Po -2.25 3.25
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pcb_push.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pcb_push.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -71619,7 +71619,7 @@ Ne 0 ""
 Po 1.5 1.55
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/smd_slide_seeed.wrl"
+Na "BADGER_v41_lib/BADGER_3D/smd_slide_seeed.wrl"
 Sc 0.4 0.4 0.4
 Of 0 -0.08 0
 Ro 0 0 0
@@ -71672,7 +71672,7 @@ Ne 1 "/3V3"
 Po 2.2606 -4.0894
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/smd_push2.wrl"
+Na "BADGER_v41_lib/BADGER_3D/smd_push2.wrl"
 Sc 1.25 1.25 1.25
 Of 0 0 0
 Ro 0 0 0
@@ -71798,7 +71798,7 @@ Ne 0 ""
 Po 3.81 -1.651
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/socket_1x4.wrl"
+Na "BADGER_v41_lib/BADGER_3D/socket_1x4.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -72120,7 +72120,7 @@ Po 2.79908 4.15036
 .LocalClearance 0.127
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/tqfp32.wrl"
+Na "BADGER_v41_lib/BADGER_3D/tqfp32.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -72409,7 +72409,7 @@ Po 2.79908 4.15036
 .LocalClearance 0.09906
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/tqfp32.wrl"
+Na "BADGER_v41_lib/BADGER_3D/tqfp32.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -72602,7 +72602,7 @@ Po -2.92608 -2.79908
 .LocalClearance 0.1016
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/tssop-20.wrl"
+Na "BADGER_v41_lib/BADGER_3D/tssop-20.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -72723,7 +72723,7 @@ Po -2.667 3.302
 .LocalClearance 0.2032
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/usb_B_micro_smd.wrl"
+Na "BADGER_v41_lib/BADGER_3D/usb_B_micro_smd.wrl"
 Sc 1 1 1
 Of -0.1 0 0
 Ro 0 0 90
@@ -72764,7 +72764,7 @@ Ne 1 "GND"
 Po 0 5.334
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/Crystal_Radial.wrl"
+Na "BADGER_v41_lib/BADGER_3D/Crystal_Radial.wrl"
 Sc 1.2 1.2 1.2
 Of 0 -0.05 0.05
 Ro 0 -90 90
@@ -72810,7 +72810,7 @@ Ne 1 "/aLaMode_pwr/5V0"
 Po -3.2385 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/C0805.wrl"
+Na "BADGER_v41_lib/BADGER_3D/C0805.wrl"
 Sc 1.6 1.6 1
 Of 0 0 0
 Ro 0 0 0
@@ -72874,7 +72874,7 @@ Ne 2 "N-0000058"
 Po 1.143 0.9525
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/R0805.wrl"
+Na "BADGER_v41_lib/BADGER_3D/R0805.wrl"
 Sc 1 1.2 1
 Of 0 0 0.005
 Ro 0 0 0
@@ -73329,7 +73329,7 @@ Po -11.7 1.85
 .SolderPaste -0.1
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/eink_epd.wrl"
+Na "BADGER_v41_lib/BADGER_3D/eink_epd.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -73785,7 +73785,7 @@ Po -9.75 16.129
 .LocalClearance 0.1
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/eink_epd.wrl"
+Na "BADGER_v41_lib/BADGER_3D/eink_epd.wrl"
 Sc 1 1 1
 Of 0.32 -1.84 0
 Ro 0 0 -90
@@ -74237,13 +74237,13 @@ Po -9.75 16.129
 .LocalClearance 0.1
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/eink_epd.wrl"
+Na "BADGER_v41_lib/BADGER_3D/eink_epd.wrl"
 Sc 1 1 1
 Of 0.32 -1.84 0
 Ro 0 0 -90
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/FH12S-40S.wrl"
+Na "BADGER_v41_lib/BADGER_3D/FH12S-40S.wrl"
 Sc 0.4 0.4 0.4
 Of 0 -0.51 -0.11
 Ro 180 -90 90
@@ -74709,13 +74709,13 @@ Po -9.75 16.129
 .LocalClearance 0.1
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/eink_epd.wrl"
+Na "BADGER_v41_lib/BADGER_3D/eink_epd.wrl"
 Sc 1 1 1
 Of 0.32 -1.84 0
 Ro 0 0 -90
 $EndSHAPE3D
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/FH12S-40S.wrl"
+Na "BADGER_v41_lib/BADGER_3D/FH12S-40S.wrl"
 Sc 0.4 0.4 0.4
 Of 0 -0.51 -0.11
 Ro 180 -90 90
@@ -74750,7 +74750,7 @@ Ne 0 ""
 Po -0.75184 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/C0603.wrl"
+Na "BADGER_v41_lib/BADGER_3D/C0603.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -74788,7 +74788,7 @@ Ne 1 "/VCL"
 Po -1.016 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/C0805.wrl"
+Na "BADGER_v41_lib/BADGER_3D/C0805.wrl"
 Sc 0.4 0.4 0.4
 Of 0 0 0
 Ro 0 0 0
@@ -74845,7 +74845,7 @@ Ne 2 "/aLaMode_pwr/V_IN"
 Po -1.016 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/sod323.wrl"
+Na "BADGER_v41_lib/BADGER_3D/sod323.wrl"
 Sc 1.2 1.5 0.8
 Of 0 0 0
 Ro 0 0 0
@@ -74883,7 +74883,7 @@ Ne 2 "/BATT_3V"
 Po -0.635 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/micromelf.wrl"
+Na "BADGER_v41_lib/BADGER_3D/micromelf.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -74938,7 +74938,7 @@ Ne 0 ""
 Po -1.905 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/do214aa.wrl"
+Na "BADGER_v41_lib/BADGER_3D/do214aa.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -74982,7 +74982,7 @@ Ne 2 "GND"
 Po -0.6985 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/sod323.wrl"
+Na "BADGER_v41_lib/BADGER_3D/sod323.wrl"
 Sc 1.75 1.75 1.75
 Of 0.05 0 0
 Ro 0 0 0
@@ -75027,7 +75027,7 @@ Ne 1 "/aLaMode_pwr/5V0"
 Po -1.905 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/r_0805.wrl"
+Na "BADGER_v41_lib/BADGER_3D/r_0805.wrl"
 Sc 2 1.5 1
 Of 0 0 0
 Ro 0 0 0
@@ -75076,7 +75076,7 @@ Ne 0 ""
 Po -3.048 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/r_0805.wrl"
+Na "BADGER_v41_lib/BADGER_3D/r_0805.wrl"
 Sc 3 2 2
 Of 0 0 0
 Ro 0 0 0
@@ -75107,7 +75107,7 @@ Ne 1 "GND"
 Po -1.016 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/cree_clm3c.wrl"
+Na "BADGER_v41_lib/BADGER_3D/cree_clm3c.wrl"
 Sc 0.75 0.75 0.75
 Of 0 0 0
 Ro 0 0 0
@@ -75171,7 +75171,7 @@ Ne 4 "VCC"
 Po 3.81 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/pin_strip_4-90.wrl"
+Na "BADGER_v41_lib/BADGER_3D/pin_strip_4-90.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -75209,7 +75209,7 @@ Ne 2 "/VCOM"
 Po -0.9525 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/R0805.wrl"
+Na "BADGER_v41_lib/BADGER_3D/R0805.wrl"
 Sc 0.4 0.4 0.4
 Of 0 0 0
 Ro 0 0 0
@@ -75402,7 +75402,7 @@ Po -2.92608 -2.79908
 .LocalClearance 0.1016
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/tssop-20.wrl"
+Na "BADGER_v41_lib/BADGER_3D/tssop-20.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0
@@ -75426,7 +75426,7 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $SHAPE3D
-Na "BADGER_v5_lib/BADGER_v5_3D/vite_2mm5.wrl"
+Na "BADGER_v41_lib/BADGER_3D/vite_2mm5.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0

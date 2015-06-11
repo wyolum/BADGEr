@@ -1,4 +1,4 @@
-update=Friday 20 June 2014 07:06:59 PM IST
+update=Thu Jun 11 14:09:19 2015
 version=1
 last_client=kicad
 [cvpcb]
@@ -32,17 +32,10 @@ LibName2=BADGER_v5_lib/wyo_logo
 LibName3=BADGER_v5_lib/OSHW
 [eeschema]
 version=1
-PageLayoutDescrFile=
-SubpartIdSeparator=0
-SubpartFirstId=65
 LibDir=
-NetFmtName=PcbnewAdvanced
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
 [eeschema/libraries]
 LibName1=BADGER_v41_lib/BADGER_sym
 LibName2=BADGER_v41_lib/power
+LibName3=BADGER_v41-cache
 [general]
 version=1

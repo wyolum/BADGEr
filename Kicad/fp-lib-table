@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name BADGEr_fp)(type Legacy)(uri "$(KIPRJMOD)/BADGER_v41_lib/BADGEr_fp.mod")(options "")(descr ""))
+  (lib (name OSHW)(type Legacy)(uri "$(KIPRJMOD)/BADGER_v41_lib/OSHW.mod")(options "")(descr ""))
+  (lib (name wyo_logo)(type Legacy)(uri "$(KIPRJMOD)/BADGER_v41_lib/wyo_logo.mod")(options "")(descr ""))
+)
