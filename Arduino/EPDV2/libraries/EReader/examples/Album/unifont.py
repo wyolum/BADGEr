@@ -15,7 +15,7 @@ def bits(byte):
     try:
         num = int(byte, 16)
     except ValueError:
-        print '"%s"' % byte, 'HERE'
+        print('"%s"' % byte, 'HERE')
         raise
     for i in range(3, -1, -1):
         bit = (num >> i) & 1
@@ -68,8 +68,8 @@ def unpack(s):
         w = 4
     for i in range(16):
         l = data[i * w:(i + 1) * w]
-        print '    ', bitstr(l)
-    print
+        print('    ', bitstr(l))
+    print()
 
 HEX_FILE = open('unifont.hex')
 
@@ -82,8 +82,8 @@ def create_index(filename='unifont.index'):
         dec = int(unic, 16)
         while last < dec - 1:
             last += 1
-            print >> index, '%04x:ffffff' % (last,)
-        print >> index, '%s:%06x' % (unic, n)
+            print('%04x:ffffff' % (last,), file=index)
+        print('%s:%06x' % (unic, n), file=index)
         n += len(l)
         last = dec
 
@@ -97,7 +97,7 @@ def check_index(f, wff_filename='unifont.index'):
         offset = int(offset, 16)
         HEX_FILE.seek(offset)
         if i != int(unic, 16):
-            print 'off in line %x' % i
+            print('off in line %x' % i)
         # assert i == int(unic, 16), 'off in line %x' % i
 
 
@@ -119,7 +119,7 @@ def create_wff(out_filename=UNIFONT_FN):
             wff.write(repack(BLANK))
         wff.write(repack(data))
         last = dec
-    print 'created', out_filename
+    print('created', out_filename)
 # create_wff() ##only need to call once
 
 def wff_to_hex(wff_file, idx):
@@ -176,12 +176,12 @@ def check_wff(wff_filename=UNIFONT_FN):
                 break
     # bigIm.show()
     bigIm.save('unifont.jpg')
-    print 'wrote unifont.jpg'
+    print('wrote unifont.jpg')
 # check_wff() ## only call once
 BIGTEXT_OFFSET = 0xfee0
 def calcsize(text, bigascii=False, wff_file=UNIFONT_FILE):
     if bigascii:
-        utxt = ''.join([unichr(ord(c) + BIGTEXT_OFFSET) for c in text])
+        utxt = ''.join([chr(ord(c) + BIGTEXT_OFFSET) for c in text])
         x, y = calcsize(utxt, bigascii=False, wff_file=wff_file)
     else:
         x = 0
@@ -197,7 +197,7 @@ def addText(text, im, x, y, bigascii=False, wff_file=UNIFONT_FILE):
     if bigascii == True, then use large chars near end of UNIFONT file
     '''
     if bigascii:
-        utxt = ''.join([unichr(ord(c) + BIGTEXT_OFFSET) for c in text])
+        utxt = ''.join([chr(ord(c) + BIGTEXT_OFFSET) for c in text])
         addText(utxt, im, x, y, bigascii=False, wff_file=wff_file)
     else:
         for unic in text:

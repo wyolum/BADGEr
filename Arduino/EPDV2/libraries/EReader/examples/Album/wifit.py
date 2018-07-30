@@ -1,16 +1,16 @@
 import tempfile
 import json
-import StringIO
-import urllib2
+import io
+import urllib.request, urllib.error, urllib.parse
 import ascii_5x7
 import unifont
 import glob
 import time
 import os, sys
-import Tkinter
-import tkFileDialog
-import Image, ImageTk
-import ImageEnhance
+import tkinter
+import tkinter.filedialog
+from PIL import Image, ImageTk
+from PIL import ImageEnhance
 import PIL.ImageOps
 import struct
 import os.path
@@ -52,20 +52,20 @@ def intersect_rectangles(bbox1, bbox2):
 
 #### Callbacks
 def file_open_dialog():
-    out = tkFileDialog.askopenfilename(**file_opt)
+    out = tkinter.filedialog.askopenfilename(**file_opt)
     if out:
         background.delete_all()
         foreground = WIF(out, background)
         foreground.select()
 
 def file_import_dialog():
-    out = tkFileDialog.askopenfilename(**file_opt)
+    out = tkinter.filedialog.askopenfilename(**file_opt)
     if out:
         foreground = WIF(out, background)
         foreground.select()
 
 def file_save_dialog():
-    fn = tkFileDialog.asksaveasfilename(
+    fn = tkinter.filedialog.asksaveasfilename(
         defaultextension='.WIF',
         filetypes=[
             ('WyoLum Image Format', '.WIF'),
@@ -137,7 +137,7 @@ class WIF:
         self.init_image(fn, size=size)
         self.parent = parent
         self.children = []
-        if not isinstance(self.parent, Tkinter.Canvas):
+        if not isinstance(self.parent, tkinter.Canvas):
             self.parent.children.insert(0, self) ## put new child on top of stack
         self.owns_event = False ## keep track of widget that owns a mouse drag
         self.selected = False   ## select with left mouse no drag
@@ -205,8 +205,8 @@ class WIF:
             foreground = WIF(path, self)
             foreground.select()
             foreground.show()
-        except Exception, e:
-            print e
+        except Exception as e:
+            print(e)
             pass
 
     def key_event(self, event):
@@ -304,7 +304,7 @@ class WIF:
         return out
 
     def getCanvas(self):
-        if isinstance(self.parent, Tkinter.Canvas):
+        if isinstance(self.parent, tkinter.Canvas):
             out = self.parent
         else:
             out = self.parent.getCanvas()
@@ -516,7 +516,7 @@ class WIF:
             data = json.loads(data)
             root.tempf.seek(0)
             buff = root.tempf.read()
-            buff = StringIO.StringIO(buff)
+            buff = io.StringIO(buff)
             self.image1 = Image.open(buff)
             self.contrast  = data[0]['contrast']
             self.brightness = data[0]['brightness']
@@ -528,7 +528,7 @@ class WIF:
             
         elif fn.startswith('http://'):
             try:
-                data = StringIO.StringIO(urllib2.urlopen(fn).read())
+                data = io.StringIO(urllib.request.urlopen(fn).read())
                 self.image1 = Image.open(data)
                 size = self.image1.size
             except:
@@ -630,10 +630,10 @@ class WIF:
             dir, fn = os.path.split(fn)
             fn = os.path.join(dir, fn.upper())
             towif(im, fn)
-            print 'wrote WIF', fn
+            print(('wrote WIF', fn))
         elif fn.lower().endswith('.png'):
             im.save(fn)
-            print 'wrote PNG', fn
+            print(('wrote PNG', fn))
         else:
             pass 
 
@@ -712,9 +712,9 @@ class WText(WIF):
             out = True
         return out
     
-root = Tkinter.Tk()
+root = tkinter.Tk()
 root.wm_title('WyoLum Image Format!')
-canvas = Tkinter.Canvas(root, width=W, height=H)
+canvas = tkinter.Canvas(root, width=W, height=H)
 canvas.pack()
 
 
@@ -728,12 +728,12 @@ else:
     WIF(DEFAULT_IMAGE, background)
 
 def printstack(*args, **kw):
-    print background
+    print(background)
     for child in background.children:
-        print '  ', child
+        print(('  ', child))
         for gc in child.children:
-            print '    ', gc
-    print
+            print(('    ', gc))
+    print()
 # foreground = WIF('WYO.WIF', background)
 canvas.bind('<Button>', background.button_down)
 canvas.bind('<B1-Motion>', background.drag)
@@ -759,37 +759,37 @@ root.bind('<Home>', background.top_selected)
 root.bind('<End>', background.bottom_selected)
 
 
-control_frame = Tkinter.Frame(root)
-prev_b = Tkinter.Button(control_frame, text="Prev", command=curry(next, -1))
-prev_b.pack(side=Tkinter.LEFT)
-contrast = Tkinter.Scale(control_frame, from_=-5, to = 5, 
-                         orient=Tkinter.HORIZONTAL, 
+control_frame = tkinter.Frame(root)
+prev_b = tkinter.Button(control_frame, text="Prev", command=curry(next, -1))
+prev_b.pack(side=tkinter.LEFT)
+contrast = tkinter.Scale(control_frame, from_=-5, to = 5, 
+                         orient=tkinter.HORIZONTAL, 
                          label='Contrast', 
                          command=background.set_contrast, 
                          resolution=.01)
 contrast.set(1.)
-contrast.pack(side=Tkinter.LEFT)
-brightness = Tkinter.Scale(control_frame, 
+contrast.pack(side=tkinter.LEFT)
+brightness = tkinter.Scale(control_frame, 
                            from_=0, to = 5, 
-                           orient=Tkinter.HORIZONTAL, 
+                           orient=tkinter.HORIZONTAL, 
                            label='Brightness', 
                            command=background.set_brightness, 
                            resolution=.01)
 brightness.set(1.)
-brightness.pack(side=Tkinter.LEFT)
-next_b = Tkinter.Button(control_frame, text="Next", command=next)
-next_b.pack(side=Tkinter.RIGHT)
+brightness.pack(side=tkinter.LEFT)
+next_b = tkinter.Button(control_frame, text="Next", command=next)
+next_b.pack(side=tkinter.RIGHT)
 control_frame.pack()
 
-menubar = Tkinter.Menu(root)
+menubar = tkinter.Menu(root)
 root.config(menu=menubar)
-fileMenu = Tkinter.Menu(menubar)
+fileMenu = tkinter.Menu(menubar)
 fileMenu.add_command(label="Open", command=file_open_dialog)
 fileMenu.add_command(label="Save", command=file_save_dialog)
 fileMenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="File", menu=fileMenu)
 
-editMenu = Tkinter.Menu(menubar)
+editMenu = tkinter.Menu(menubar)
 editMenu.add_command(label="Invert (Ctrl-i)", command=background.invert_image)
 editMenu.add_command(label="Rotate (Ctrl-r)", command=background.rotate_image)
 editMenu.add_command(label="Flip V (Ctrl-u)", command=background.flip_v_image)
@@ -804,14 +804,14 @@ root.bind('<Shift-Down>', curry(background.nudge, y=1))
 root.bind('<Shift-Left>', curry(background.nudge, x=-1))
 root.bind('<Shift-Right>', curry(background.nudge, x=1))
 
-sizeMenu = Tkinter.Menu(menubar)
+sizeMenu = tkinter.Menu(menubar)
 sizeMenu.add_command(label="EPD_LARGE", command=curry(background.set_area, area=EPD_LARGE))
 sizeMenu.add_command(label="EPD_MED", command=curry(background.set_area, area=EPD_MED))
 sizeMenu.add_command(label="EPD_SMALL", command=curry(background.set_area, area=EPD_SMALL))
 sizeMenu.add_command(label="HEAD_SHOT", command=curry(background.set_area, area=HEAD_SHOT))
 menubar.add_cascade(label="Size", menu=sizeMenu)
 
-insertMenu = Tkinter.Menu(menubar)
+insertMenu = tkinter.Menu(menubar)
 insertMenu.add_command(label="Image", command=file_import_dialog)
 insertMenu.add_command(label="Big ASCII Text (I)", command=curry(WText, parent=background, text='', unifont_f=True, bigascii=True))
 insertMenu.add_command(label="Unifont Text (i)", command=curry(WText, parent=background, text='', unifont_f=True, bigascii=False))
